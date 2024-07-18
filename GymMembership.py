@@ -51,7 +51,7 @@ class GymMembership:
     def calculate_total_cost(self):
         self.total_cost = self.base_cost + self.additional_cost
         if self.group_members > 1:
-            self.total_cost *= 0.9
+            self.total_cost -= self.total_cost*0.1
         if self.total_cost > 200:
             self.total_cost -= 20
         if self.total_cost > 400:
