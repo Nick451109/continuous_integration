@@ -1,9 +1,10 @@
-import unittest, GymMembership
+import unittest
+import GymMembership as gym
 
 class TestGymMembership(unittest.TestCase):
 
     def setUp(self):
-        self.gym = GymMembership()
+        self.gym = gym.GymMembership()
         self.gym.selected_plan = "Basic"
         self.gym.base_cost = self.gym.membership_plans["Basic"]
     
